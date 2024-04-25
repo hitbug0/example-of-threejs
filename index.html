@@ -1,0 +1,33 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../includes/style.css">
+    <title>display 3D model | hitbug</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>3Dモデルの表示</h1>
+        <div class="model-container" id="chain-1"></div>
+        <div class="model-container" id="milk_crown-2"></div>
+    </div>
+</body>
+    <script>
+        const OBJ_INFO=[
+            [
+                '../stl/chain.stl',    /*  形状ファイルのパス          */
+                ['chain-1'],           /*  表示先divのid              */
+                [[0,-300,150]],        /*  視点の位置座標[x,y,z]       */
+                [['orange', 'white']], /*  形状と背景の色              */
+                [1, 10000]             /*  ズームイン/アウトの限界距離  */
+            ],
+            [
+                '../stl/milk_crown.stl',
+                ['milk_crown-2'],
+                [[100,-300,150]],
+                [['rainbow', 'white']],
+                [1, 10000]
+            ],
+        ];
+    </script>
+    <script src="../includes/display-3dmodel.js" type="module"></script>
+</html>

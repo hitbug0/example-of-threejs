@@ -1,0 +1,27 @@
+/*
+Author: hitbug
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* bodyとwrapperの設定は本質ではないので、消しても問題ない */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+body {
+    font-family: 'Noto Sans JP', sans-serif; 
+    background-color: rgb(234, 234, 234);
+    display: flex;
+    justify-content: center;
+}
+
+.model-container {
+    justify-content: center;
+    background-color: #f8f8f8;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    height: 600px;
+    width: 1000px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
